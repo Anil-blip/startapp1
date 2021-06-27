@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>website for beginners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<link href="css/style.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head> 
+<body>
+<table id="search">
+<tr>
+<td><img src="Logo.jpg" id="logo"></td>
+<td><form action="pdct.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form></td>
+	<th id="top"><a href="About.html" >About us</a></th>
+<th><button type="submit" onclick="window.location.href = 'Profile.html';"><i class='fas fa-user'></i></button></th>
+<th><button type="submit" onclick="window.location.href = 'shoppingcart.html';"><i class="fa fa-shopping-cart fa_custom"></button></th>
+</tr>
+</table>
+<div class="header">
+<img src="img.jpg" alt="header"></div>
+<div class="content-wrapper">
+<div class="container">
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="pdct.html" class="active">Product</a>
+<a href="flip.html">Feedback</a></div>
+<div class="content">
+<h2 class="heading">Mobiles</h2>
+<div class="products">
+<div class="box1">
+<div class="price1">$25</div>
+<a href="" class="buy">Buy</a>
+<p style="dis">instock</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideimg" src="mo14.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideimg" src="mo15.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideimg" src="mo16.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p class="dis3">instock</p>
+<p class="dis1">Lava A1</p>
+<p class="dis2">Lava A1  (Glossy Blue)</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="box1">
+<p>Lava A1</p>
+<p class="dis2">Lava A1  (Glossy Blue)</p>
+<p class="prce">Price $25</p>
+<p class="save">you save $4,11%off</p>
+<p class="rat">4.1 ,15Ratings and 0 reviews</p>
+<div class="details">
+<p class="detail">Product Details</p>
+<table>
+<tr>
+<td class="tab">Model No.:</td>
+<td>STK-L22</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Model Name:</td>
+<td>Lava A1</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Series:</td>
+<td>LavaBook 14</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">color:</td>
+<td>Midnight Black</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Browse type:</td>
+<td>Keypadphones</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Sim type:</td>
+<td>Dual Sim</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Hybrid Sim Slot:</td>
+<td>Yes</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Touchscreen:</td>
+<td>Yes</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">OTG Compatible:</td>
+<td>Yes</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Sar value:</td>
+<td>Head: 0.78 W/kg</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="tab">In The Box:</td>
+<td>Handset, Charger, Type-C<br>Cable,TPU Protective Case,<br>Eject-Tool,Quick StartGuide,<br> Warranty Card</td>
+</tr>
+</table>
+</div></div>
+<div class="box">
+<a href="mob4.html"><img src="mob55.jpg" alt="img not found"></a>
+<div class="price">$210</div>
+<p class="dis">Upto 4% off<br>In stock</p>
+<p class="name">POCO F1 (Steel Blue, 256 GB)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mob.html"><img src="mo1.jpg" alt="img not found"></a>
+<div class="price">$100</div>
+<p class="dis">Upto 10% off<br>In stock</p>
+<p class="name">Honour 9x(Midnight Black, 128 GB)(6 GB RAM)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mob3.html"><img src="mob44.jpg" alt="img not found"></a>
+<div class="price">$245</div>
+<p class="dis">Upto 6% off<br>In stock</p>
+<p class="name">Motorola One Macro(Space Blue, 64 GB)(4 GB RAM)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mob2.html"><img src="mob34.jpg" alt="img not found"></a>
+<div class="price">$220</div>
+<p class="dis">Upto 11% off<br>In stock</p>
+<p class="name">Infinix S5 (Violet, 64 GB)(4 GB RAM)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mobile2.html"><img src="mobi12.jpg" alt="img not found"></a>
+<div class="price">$150</div>
+<p class="dis">Upto 9% off<br>In stock</p>
+<p class="name">Vivo V5 (Crown gold, 32 GB)(4 GB RAM)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mob5.html"><img src="mo11r.jpg" alt="img not found"></a>
+<div class="price">$30</div>
+<p class="dis">Upto 11% off<br>In stock</p>
+<p class="name">Samsung Guru Music 2  (Blue)</p>
+<a href="" class="buy">Buy</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="footer">
+<h5>Maintanence and design by Anil</h5>
+<h5>Roll number : 11913021  Section:IT-A(1)</h5>
+<p>copyright &copy;2020</p>
+</div>
+</body>
+</html>

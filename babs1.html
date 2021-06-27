@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>website for beginners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<link href="css/style.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head> 
+<body>
+<table id="search">
+<tr>
+<td><img src="Logo.jpg" id="logo"></td>
+<td><form action="pdct.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form></td>
+	<th id="top"><a href="About.html" >About us</a></th>
+<th><button type="submit" onclick="window.location.href = 'Profile.html';"><i class='fas fa-user'></i></button></th>
+<th><button type="submit" onclick="window.location.href = 'shoppingcart.html';"><i class="fa fa-shopping-cart fa_custom"></button></th>
+</tr>
+</table>
+<div class="header">
+<img src="img.jpg" alt="header"></div>
+<div class="content-wrapper">
+<div class="container">
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="pdct.html" class="active">Product</a>
+<a href="flip.html">Feedback</a></div>
+<div class="content">
+<h2 class="heading">Shoes</h2>
+<div class="products">
+<div class="box1">
+<div class="price1">$25</div>
+<a href="" class="buy">Buy</a>
+<p style="dis">instock</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideimg" src="babs1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideimg" src="babs2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideimg" src="babs3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p class="dis3">instock</p>
+<p class="dis1">Dora</p>
+<p class="dis2">Velcro Running Shoes For Girls  (Pink)</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="box1">
+<p>Dora</p>
+<p class="dis2">Velcro Running Shoes For Girls  (Pink)</p>
+<p class="prce">Price $17</p>
+<p class="save">you save $1,4%off</p>
+<p>4.2 ,15Ratings and 0 reviews</p>
+<div class="details">
+<p class="detail">Product Details</p>
+<table>
+<tr>
+<td class="tab">Brand</td>
+<td>Dora</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="tab">Ideal For</td>
+<td>Girls</td>
+</tr><tr></tr>
+<td class="tab">sryle code</td>
+<td>CRDRSS60OR</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Pattern</td>
+<td>Applique</td>
+</tr><tr></tr>
+<tr>
+<tr>
+<td class="tab">Occasion</td>
+<td>Casual</td>
+<tr>
+<td class="tab">Sub type</td>
+<td>Running Shoe</td>
+</tr><tr></tr>
+<tr>
+<tr>
+<td class="tab">Generic Name</td>
+<td>Kids shoe</td>
+</tr>
+<td class="tab">Color</td>
+<td>Pink</td>
+</tr>
+</table>
+</div></div>
+<div class="box">
+<a href="babs1.html"><img src="babs1.jpg" alt="img not found"></a>
+<div class="price">$17</div>
+<p class="dis">Upto 4% off<br>In stock</p>
+<p class="name">Velcro Running Shoes For Girls  (Pink)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="bab2.html"><img src="bab1.jpg" alt="img not found"></a>
+<div class="price">$22</div>
+<p class="dis">Upto 7% off<br>In stock</p>
+<p class="name">Girls Midi/Knee Length Party Dress (Black, Sleeveless)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="bab3.html"><img src="bab7.jpg" alt="img not found"></a>
+<div class="price">$23</div>
+<p class="dis">Upto 10% off<br>In stock</p>
+<p class="name">Girls Midi/Knee Length Party Dress (Orange, Sleeveless)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="bab4.html"><img src="bab10.jpg" alt="img not found"></a>
+<div class="price">$20</div>
+<p class="dis">Upto 5% off<br>In stock</p>
+<p class="name">AJ Dezines Boys Party(Festive) Shirt Shorts  (Red)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="bab5.html"><img src="bab13.jpg" alt="img not found"></a>
+<div class="price">$19</div>
+<p class="dis">Upto 6% off<br>In stock</p>
+<p class="name">Kidling Boys Party(Festive) Shirt Jacket, Shorts (Blue)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="bab6.html"><img src="bab17.jpg" alt="img not found"></a>
+<div class="price">$21</div>
+<p class="dis">Upto 4% off<br>In stock</p>
+<p class="name">Miss & Chief Slip on Ballerinas For Girls  (Multicolor)</p>
+<a href="" class="buy">Buy</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="footer">
+<h5>Maintanence and design by Anil</h5>
+<h5>Roll number : 11913021  Section:IT-A(1)</h5>
+<p>copyright &copy;2020</p>
+</div>
+</body>
+</html>

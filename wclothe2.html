@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>website for beginners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<link href="css/style.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head> 
+<body>
+<table id="search">
+<tr>
+<td><img src="Logo.jpg" id="logo"></td>
+<td><form action="pdct.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form></td>
+	<th id="top"><a href="About.html" >About us</a></th>
+<th><button type="submit" onclick="window.location.href = 'Profile.html';"><i class='fas fa-user'></i></button></th>
+<th><button type="submit" onclick="window.location.href = 'shoppingcart.html';"><i class="fa fa-shopping-cart fa_custom"></button></th>
+</tr>
+</table>
+<div class="header">
+<img src="img.jpg" alt="header"></div>
+<div class="content-wrapper">
+<div class="container">
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="pdct.html" class="active">Product</a>
+<a href="flip.html">Feedback</a></div>
+<div class="content">
+<h2 class="heading">Women clothes</h2>
+<div class="products">
+<div class="box1">
+<div class="price1">$150</div>
+<a href="" class="buy">Buy</a>
+<p style="dis">instock</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideimg" src="wc1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideimg" src="wc2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideimg" src="wc3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p class="dis3">instock</p>
+<p class="dis1">Rangun </p>
+<p class="dis2">Women A-line White,Black Dress</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="box1">
+<p>Rangun</p>
+<p class="dis2">Women A-line White,Black Dress</p>
+<p class="prce">Price $103</p>
+<p class="save">you save $5,9%off</p>
+<p>4.1 ,15Ratings and 0 reviews</p>
+<div class="details">
+<p class="detail">Product Details</p>
+<table>
+<tr>
+<td class="tab">Type</td>
+<td>Fit and Flare</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="tab">Ideal For</td>
+<td>Women</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Neck</td>
+<td>Asymmetric Neck</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">sleev Length</td>
+<td>Sleeveless</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Fabric Care</td>
+<td>Hand Wash</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Length</td>
+<td>Midi/Calf Length</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">style code</td>
+<td>DRESS_1010</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Color</td>
+<td>White, Black</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Fabric</td>
+<td>Cotton Blend</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Pattern</td>
+<td>Printed</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Suitable for</td>
+<td>Western Wear</td>
+</tr><tr></tr>
+</table>
+</div></div>
+<div class="box">
+<a href="wclothe4.html"><img src="wc10.jpg" alt="img not found"></a>
+<div class="price">$75</div>
+<p class="dis">Upto 9% off<br>In stock</p>
+<p class="name">Saara Crepe Floral Print Salwar Suit Material</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="wclothe3.html"><img src="wc4.jpg" alt="img not found"></a>
+<div class="price">$99</div>
+<p class="dis">Upto 11% off<br>In stock</p>
+<p class="name">Women Gown Yellow Dress</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="wclothe.html"><img src="wc7.jpg" alt="img not found"></a>
+<div class="price">$110</div>
+<p class="dis">Upto 11% off<br>In stock</p>
+<p class="name">Women Fit and Flare White, Black Dress</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="clothe6.html"><img src="wc13.jpg" alt="img not found"></a>
+<div class="price">$65</div>
+<p class="dis">Upto 8% off<br>In stock</p>
+<p class="name">Sleeveless Solid Women Jacket</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="wclothe5.html"><img src="wc16.jpg" alt="img not found"></a>
+<div class="price">$60</div>
+<p class="dis">Upto 11% off<br>In stock</p>
+<p class="name">Women Asymmetric Full Sleeve Dark Blue Shrug</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mens.html"><img src="wc7r.jpg" alt="img not found"></a>
+<div class="price">$95</div>
+<p class="dis">Upto 4% off<br>In stock</p>
+<p class="name">Women Two Piece Dress Dark Blue Dress</p>
+<a href="" class="buy">Buy</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="footer">
+<h5>Maintanence and design by Anil</h5>
+<h5>Roll number : 11913021  Section:IT-A(1)</h5>
+<p>copyright &copy;2020</p>
+</div>
+</body>
+</html>

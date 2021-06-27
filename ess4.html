@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>website for beginners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<link href="css/style.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head> 
+<body>
+<table id="search">
+<tr>
+<td><img src="Logo.jpg" id="logo"></td>
+<td><form action="pdct.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form></td>
+	<th id="top"><a href="About.html" >About us</a></th>
+<th><button type="submit" onclick="window.location.href = 'Profile.html';"><i class='fas fa-user'></i></button></th>
+<th><button type="submit" onclick="window.location.href = 'shoppingcart.html';"><i class="fa fa-shopping-cart fa_custom"></button></th>
+</tr>
+</table>
+<div class="header">
+<img src="img.jpg" alt="header"></div>
+<div class="content-wrapper">
+<div class="container">
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="pdct.html" class="active">Product</a>
+<a href="flip.html">Feedback</a></div>
+<div class="content">
+<h2 class="heading">Essential</h2>
+<div class="products">
+<div class="box1">
+<div class="price1">$10</div>
+<a href="" class="buy">Buy</a>
+<p style="dis">instock</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideimg" src="ess15.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideimg" src="ess11.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideimg" src="ess10.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p class="dis3">instock</p>
+<p class="dis1">Rin</p>
+<p class="dis2">Surf Excel Powder,3Kg+1kg = 4 kg</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="box1">
+<p>Surf Excel</p>
+<p class="dis2">Detergent Powder,3 Kg + 1 kg=4 kg</p>
+<p class="prce">Price $10</p>
+<p class="save">1Kg Free</p>
+<p>4.2 ,15Ratings and 0 reviews</p>
+<div class="details">
+<p class="detail">Product Details</p>
+<table>
+<tr>
+<td class="tab">Sales Package</td>
+<td>4 kg packet</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="tab">Brand</td>
+<td>Surf Excel</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Model Name</td>
+<td>Pure Washing Powder</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Composotion</td>
+<td>Natural Oils, Pure Glycerin</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Ideal For</td>
+<td>Washing clothes</td>
+</tr><tr></tr>
+<td class="tab">Type</td>
+<td>Washing Powder</td>
+</tr>
+</table>
+</div></div>
+<div class="box">
+<a href="essen.html"><img src="ess1.jpg" alt="img not found"></a>
+<div class="price">$2</div>
+<p class="dis">Upto 3% off<br>In stock</p>
+<p class="name">Pears Pure & Gentle Bathing Bar (3 x 75 g)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="ess2.html"><img src="ess6.jpg" alt="img not found"></a>
+<div class="price">$3</div>
+<p class="dis">Upto 6% off<br>In stock</p>
+<p class="name">Santoor Sandal And Turmeric Soap(4 x 150 g)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="ess3.html"><img src="ess8.jpg" alt="img not found"></a>
+<div class="price">$2</div>
+<p class="dis">Offer buy2 get 1Free<br>In stock</p>
+<p class="name">Rin Detergent Bar  (1000 g, Pack of 4)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="ess4.html"><img src="ess10.jpg" alt="header"></a>
+<div class="price">$10</div>
+<p class="dis">1kg Extra<br>In stock</p>
+<p class="name">Surf Excel Matic Front Load Detergent Powder, 3 Kg + 1 kg Detergent Powder 4 kg</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="ess5.html"><img src="ess14.jpg" alt="img not found"></a>
+<div class="price">$11</div>
+<p class="dis">2soap Free on 10 pack<br>In stock</p>
+<p class="name">tide 150 gm (pack of 10) Detergent Bar(1500 g, Pack of 10)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="ess6.html"><img src="ess16.jpg" alt="img not found"></a>
+<div class="price">$13</div>
+<p class="dis">1Kg free<br>In stock</p>
+<p class="name">ARIEL COMPLETE 2KG+1KG WASHING POWDER Detergent Powder 3</p>
+<a href="" class="buy">Buy</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="footer">
+<h5>Maintanence and design by Anil</h5>
+<h5>Roll number : 11913021  Section:IT-A(1)</h5>
+<p>copyright &copy;2020</p>
+</div>
+</body>
+</html>

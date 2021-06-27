@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>website for beginners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<link href="css/style.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head> 
+<body>
+<table id="search">
+<tr>
+<td><img src="Logo.jpg" id="logo"></td>
+<td><form action="pdct.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form></td>
+	<th id="top"><a href="About.html" >About us</a></th>
+<th><button type="submit" onclick="window.location.href = 'Profile.html';"><i class='fas fa-user'></i></button></th>
+<th><button type="submit" onclick="window.location.href = 'shoppingcart.html';"><i class="fa fa-shopping-cart fa_custom"></button></th>
+</tr>
+</table>
+<div class="header">
+<img src="img.jpg" alt="header"></div>
+<div class="content-wrapper">
+<div class="container">
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="pdct.html" class="active">Product</a>
+<a href="flip.html">Feedback</a></div>
+<div class="content">
+<h2 class="heading">Telivisions</h2>
+<div class="products">
+<div class="box1">
+<div class="price1">$320</div>
+<a href="" class="buy">Buy</a>
+<p style="dis">instock</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideimg" src="telv1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slideimg" src="telv2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slideimg" src="telv3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p class="dis3">instock</p>
+<p class="dis1">Mi 4A PRO</p>
+<p class="dis2">Mi 4A PRO 80 cm (32) HD Ready LED Smart Android TV</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="box1">
+<p>Mi 4A PRO</p>
+<p class="dis2">80 cm (32) HD Ready LED Smart Android TV</p>
+<p class="prce">Price $320</p>
+<p class="save">you save $6.4,3%off</p>
+<p>4.2 ,15Ratings and 0 reviews</p>
+<div class="details">
+<p class="detail">Product Details</p>
+<table>
+<tr>
+<td class="tab">Model Name</td>
+<td>L32M5-AL</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="tab">Color</td>
+<td>Black</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Screnn type</td>
+<td>LED</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Series</td>
+<td>4A PRO</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Wi-Fi type</td>
+<td>802.11 b/g/n</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">Launch Year</td>
+<td>2020</td>
+</tr><tr></tr>
+<tr>
+<td class="tab">In the box</td>
+<td>LED TV 1U, Manual 1U,<br> Screws 4U, Remote Control<br> 1U, Stand 1U</td>
+</tr>
+</table>
+</div></div>
+<div class="box">
+<a href="mens.html"><img src="telv4.jpg" alt="img not found"></a>
+<div class="price">$250</div>
+<p class="dis">Upto 9% off<br>In stock</p>
+<p class="name">Samsung Series 4 80cm (32 inch) HD Ready LED Smart TV </p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mens.html"><img src="telv5.jpg" alt="img not found"></a>
+<div class="price">$219</div>
+<p class="dis">Upto 3% off<br>In stock</p>
+<p class="name">iFFALCON by TCL AI Powered K31 138.78cm (55 inch) Ultra HD (4K) LED Smart </p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mens.html"><img src="telv6.jpg" alt="img not found"></a>
+<div class="price">$230</div>
+<p class="dis">Upto 10% off<br>In stock</p>
+<p class="name">Vu Premium 108cm (43 inch) Full HD LED Smart Android TV (43US)</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="laptop.html"><img src="l1.jpg" alt="header"></a>
+<div class="price">$200</div>
+<p class="dis">Upto 10% off<br>In stock</p>
+<p class="name">Asus VivoBook 14 Ryzen,5 Quad Core,2nd Gen Laptop</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mens.html"><img src="telv7.jpg" alt="img not found"></a>
+<div class="price">$219</div>
+<p class="dis">Upto 2% off<br>In stock</p>
+<p class="name">Thomson B9 Pro 102cm (40 inch) Full HD LED Smart TV</p>
+<a href="" class="buy">Buy</a>
+</div>
+<div class="box">
+<a href="mens.html"><img src="telv8.jpg" alt="img not found"></a>
+<div class="price">$217</div>
+<p class="dis">Upto 7% off<br>In stock</p>
+<p class="name">Kodak X900 80cm (32 inch) HD Ready LED TV  (32HDX900s)</p>
+<a href="" class="buy">Buy</a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="footer">
+<h5>Maintanence and design by Anil</h5>
+<h5>Roll number : 11913021  Section:IT-A(1)</h5>
+<p>copyright &copy;2020</p>
+</div>
+</body>
+</html>
