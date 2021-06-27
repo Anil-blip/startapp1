@@ -88,4 +88,5 @@ include_once("wclothe4.html");
 include_once("wclothe5.html");
 include_once("wclothe6.html");
 include_once("womens.html");
+include_once("style.css");
 ?>
